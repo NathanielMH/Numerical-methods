@@ -44,7 +44,7 @@ def QR_Householder(A, b):
         Q = mult_Q(Q, v)
     return np.transpose(Q), A, b
 
-
+# finds lstsq solution to overdetermined linear system Ax=b through QR decomposition.
 def QR_solve(A, b):
     n = A.shape[1]
     A_0 = A.copy()
